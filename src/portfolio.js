@@ -4,6 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import { SiAws, SiDocker, SiPytorch, SiApacheairflow } from 'react-icons/si';
 
 // Splash Screen
 
@@ -46,72 +47,101 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "EXPERIENCED MACHINE LEARNING DATA SCIENTIST PASSIONATE ABOUT REAL-WORLD AI SOLUTIONS",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Building highly scalable machine learning models for real-world prediction tasks, particularly in healthcare and medical data"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+      "⚡ Extensive experience in data cleaning, preprocessing, and data modeling using SQL on large-scale medical databases"
+    ),
+    emoji(
+      "⚡ Skilled in using Python for machine learning, including frameworks like TensorFlow, PyTorch, and Scikit-learn"
+    ),
+    emoji(
+      "⚡ Proficient in deploying machine learning models using Docker and managing workflows with MLflow"
+    ),
+    emoji(
+      "⚡ Hands-on experience with cloud platforms (AWS, Google Cloud, Azure) for running and analyzing large-scale machine learning workloads"
+    ),
   ],
+  
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Tensorflow",
+      fontAwesomeClassname: "logos-tensorflow",  // Iconify icon
+      style: { backgroundColor: "transparent" },
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Airflow",
+      fontAwesomeClassname: "logos:airflow-icon",
+      style: { backgroundColor: "transparent" }
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Pytorch",
+      fontAwesomeClassname: "devicon:pytorch",
+      style: { backgroundColor: "transparent" }
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "MLflow",
+      fontAwesomeClassname: "simple-icons:mlflow",
+      style: {color: "#0056d6"}
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "FastAPI",
+      fontAwesomeClassname: "logos:fastapi-icon",
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "DataBricks",
+      fontAwesomeClassname: "simple-icons:databricks",
+      color: "#d95000",
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "AWS",
+      fontAwesomeClassname: "logos-aws",
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "Azure",
+      fontAwesomeClassname: "devicon:azure",
     },
     {
       skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: "vscode-icons:file-type-pgsql",
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "Python",
+      fontAwesomeClassname: "logos-python",
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "Langchain",
+      fontAwesomeClassname: "simple-icons:langchain",
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "Huggingface",
+      fontAwesomeClassname: "simple-icons:huggingface",
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Docker",
+      fontAwesomeClassname: "devicon:docker-wordmark",
+    },
+    {
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "logos-kubernetes",
+    },
+    {
+      skillName: "Terrafom",
+      fontAwesomeClassname: "devicon:terraform-wordmark",
+    },
+    {
+      skillName: "AWS SageMaker",
+      fontAwesomeClassname: "logos-aws-sagemaker",
+    },
+    {
+
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -123,23 +153,38 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Utrecht University",
+      logo: require("./assets/images/utrechtLogo.png"), // Ensure the correct logo is available
+      subHeader: "PhD in Data Science and Statistics",
+      duration: "December 2020 - February 2025",
+      desc: "Research focus on applied methods for personalized prediction modeling for health data. Involved in teaching courses and conducting research for industry partners.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed meta-learning models for early prediction of Atrial Fibrillation",
+        "Taught Python Summer School and Advanced Research Methods for Statistics",
+        "Collaborated with organizations like Abbott on funded research projects"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Sharif University of Technology",
+      logo: require("./assets/images/sharifLogo.png"), // Ensure the correct logo is available
+      subHeader: "Master of Science in Industrial Engineering",
+      duration: "September 2016 - January 2019",
+      desc: "Focused on statistical modeling, machine learning, and healthcare systems. Developed a classifier for image segmentation as part of the thesis.",
+      descBullets: [
+        "Thesis: Developed a classifier for image segmentation and classification",
+        "Studied statistical process control charts for monitoring healthcare data"
+      ]
+    },
+    {
+      schoolName: "Golpayegan University of Technology",
+      logo: require("./assets/images/golpayeganLogo.png"), // Ensure the correct logo is available
+      subHeader: "Bachelor of Science in Industrial Engineering",
+      duration: "September 2011 - September 2015",
+      desc: "Studied industrial engineering with a focus on process optimization and project management.",
+      descBullets: [
+        "Gained experience in project management and quality control during internships",
+        "Studied process optimization and statistical methods"
+      ]
     }
   ]
 };
@@ -150,53 +195,101 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Python", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Pytorch",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Git",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Huggingface",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Streamlit",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Langhcian",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
+      Stack: "MLflow",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Docker",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Apache Airflow",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Github Actions",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "FastAPI",
       progressPercentage: "60%"
+    },
+    {
+      Stack: "Terraform, GCP, DataBricks",
+      progressPercentage: "40%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
-
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "PhD Candidate in Data Science & Statistics",
+      company: "Utrecht University",
+      companylogo: require("./assets/images/utrechtLogo.png"), // Ensure you have the correct logo image
+      date: "Dec 2020 – Feb 2025",
+      desc: "Conducting research in applied data science methods for personalized health predictions, funded by organizations like Abbott. Teaching Python Summer School and Advanced Research Methods for Statistics.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed personalized prediction models for health data",
+        "Supervised students in data science projects",
+        "Delivered lectures on advanced statistics and machine learning"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Marketing Operations Assistant",
+      company: "IFSGuide (Remote)",
+      companylogo: require("./assets/images/ifsGuideLogo.png"), // Ensure you have the correct logo image
+      date: "Jun 2020 – Dec 2020",
+      desc: "Managed marketing campaigns, customer support, and e-commerce platforms like Shopify, Weebly, and Webflow for IFSGuide.",
+      descBullets: [
+        "Designed the IFSGuide website using Shopify, Weebly, and Webflow",
+        "Handled marketing operations including campaigns and product orders"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Quality and Inventory Control Assistant",
+      company: "Behrizan Design Company",
+      companylogo: require("./assets/images/behrizanLogo.png"), // Ensure you have the correct logo image
+      date: "Jun 2013 – Dec 2013",
+      desc: "Contributed to the execution of ISO 9001 standards, developed reports, and introduced new principles for auditing raw materials and finished products."
+    },
+    {
+      role: "Project Management Intern",
+      company: "Behrizan Design Company",
+      companylogo: require("./assets/images/behrizanLogo.png"), // Ensure you have the correct logo image
+      date: "Jun 2012 – Sep 2012",
+      desc: "Established product scheduling for process lines, using MSP and P6 software, and presented results to top-tier managers."
     }
   ]
 };
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -209,35 +302,68 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "GitHub Projects",
+  subtitle: "SOME OF THE PROJECTS THAT I HAVE WORKED ON",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/ragProject.png"), // Add a relevant image
+      projectName: "End-to-End RAG Project",
+      projectDesc: "An end-to-end implementation of Retrieval-Augmented Generation (RAG) using Langchain, LangSmith, and Pinecone.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View on GitHub",
+          url: "https://github.com/Mehranmzn/end-to-end-rag"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/llamaProject.png"), // Add a relevant image
+      projectName: "Fine-Tuning Llama 2.7",
+      projectDesc: "Fine-tuned Llama 2.7 to create a personalized storytelling model using transformers, PEFT, and TRL.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View on GitHub",
+          url: "https://github.com/Mehranmzn/fine_tuning_llama_story_teller"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/airflowProject.png"), // Add a relevant image
+      projectName: "Stock Prices Using Airflow",
+      projectDesc: "Showcased how to use Airflow for pipeline orchestration in gathering and analyzing stock prices.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/Mehranmzn/Airflow-showcase"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/afMamlProject.png"), // Add a relevant image
+      projectName: "AF MAML",
+      projectDesc: "Developed a meta-learning algorithm for early prediction of Atrial Fibrillation using the MAML approach.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/Mehranmzn/AF_MAML.git"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/mlflowProject.png"), // Add a relevant image
+      projectName: "MLflow Small Project",
+      projectDesc: "A small project showcasing the use of MLflow for managing machine learning experiments.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/Mehranmzn/mlflow01"
         }
       ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
 
 // Achievement Section
 // Include certificates, talks etc
@@ -245,60 +371,71 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Achievements, Certifications, Award Letters, and Some Cool Stuff that I have done!",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Oxford Machine Learning Summer School",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Attended the prestigious summer school covering topics such as statistical machine learning, representation learning, graph neural networks, and more.",
+      image: require("./assets/images/oxfordLogo.png"), // Add the relevant image for Oxford
+      imageAlt: "Oxford Machine Learning Summer School Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "" // Add the certification link if available
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Udacity Nanodegree - Data Science",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Completed the Data Science Nanodegree, covering topics such as Python, PySpark, A/B testing, and SQL.",
+      image: require("./assets/images/udacityLogo.png"), // Add the Udacity logo image
+      imageAlt: "Udacity Data Science Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Certification",
+          url: "https://www.udacity.com/certificate/G9FWDDXK"
+        },
+        {
+          name: "View Project",
+          url: "https://github.com/Mehranmzn/DataScience-Nanodegree"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Udacity Nanodegree - Pytorch",
+      subtitle: "Completed the Pytorch Nanodegree focusing on Python, Pytorch, and Dash.",
+      image: require("./assets/images/udacityLogo.png"), // Add a relevant image for Pytorch Nanodegree
+      imageAlt: "Udacity Pytorch Nanodegree Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certification",
+          url: "confirm.udacity.com/5WRAGZR9"
+        },
+        {
+          name: "View Project",
+          url: "https://github.com/Mehranmzn/Pytorch-nanodegree"
+        }
+      ]
+    },
+    {
+      title: "AWS Machine Learning Foundations Course",
+      subtitle: "Completed the AWS Machine Learning Foundations course on Udacity.",
+      image: require("./assets/images/awsLogo.png"), // Add relevant image for AWS course
+      imageAlt: "AWS Machine Learning Foundations Logo",
+      footerLink: [
+        { 
+          name: "Certification", 
+          url: "" // Add the certification link if available
         }
       ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
 
 // Blogs Section
 
@@ -340,7 +477,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -353,7 +490,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section

@@ -1,6 +1,7 @@
 import React from "react";
 import "./SoftwareSkill.scss";
-import {skillsSection} from "../../portfolio";
+import { skillsSection } from "../../portfolio";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export default function SoftwareSkill() {
   return (
@@ -9,14 +10,28 @@ export default function SoftwareSkill() {
         <ul className="dev-icons">
           {skillsSection.softwareSkills.map((skills, i) => {
             return (
-              <li
+              <OverlayTrigger
                 key={i}
-                className="software-skill-inline"
-                name={skills.skillName}
+                placement={"top"}
+                overlay={
+                  <Tooltip id={`tooltip-top-${i}`}>
+                    <strong>{skills.skillName}</strong>
+                  </Tooltip>
+                }
               >
-                <i className={skills.fontAwesomeClassname}></i>
-                <p>{skills.skillName}</p>
-              </li>
+                <li className="software-skill-inline" name={skills.skillName}>
+                  {/* Use Iconify for the icon */}
+                  {skills.fontAwesomeClassname && (
+                    <span
+                      className="iconify"
+                      data-icon={skills.fontAwesomeClassname}
+                      style={skills.style}  // Inline style with color
+                      data-inline="false"
+                    ></span>
+                  )}
+                  <p>{skills.skillName}</p>
+                </li>
+              </OverlayTrigger>
             );
           })}
         </ul>

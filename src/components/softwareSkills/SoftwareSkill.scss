@@ -29,3 +29,13 @@
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
 }
+
+.skill-image {
+  width: 40px;  /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+}
+
+.iconify {
+  font-size: 40px;  /* Control icon size */
+}
+
