@@ -1,6 +1,6 @@
 {
   "homepage": "https://mehranmzn.github.io/",
-  "name": "Mehran's portfolio",
+  "name": "Mehran Moazeni portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -60,3 +60,4 @@
     "prettier": "^2.3.1"
   }
 }
+ 
