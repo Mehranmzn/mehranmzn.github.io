@@ -1,7 +1,7 @@
 import React from "react";
 import "./SoftwareSkill.scss";
-import { skillsSection } from "../../portfolio";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import {skillsSection} from "../../portfolio";
+import {OverlayTrigger, Tooltip} from "react-bootstrap";
 
 export default function SoftwareSkill() {
   return (
@@ -25,7 +25,7 @@ export default function SoftwareSkill() {
                     <span
                       className="iconify"
                       data-icon={skills.fontAwesomeClassname}
-                      style={skills.style}  // Inline style with color
+                      style={skills.style} // Inline style with color
                       data-inline="false"
                     ></span>
                   )}

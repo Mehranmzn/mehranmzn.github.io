@@ -4,7 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-import { SiAws, SiDocker, SiPytorch, SiApacheairflow } from 'react-icons/si';
+import {SiAws, SiDocker, SiPytorch, SiApacheairflow} from "react-icons/si";
 
 // Splash Screen
 
@@ -47,7 +47,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "EXPERIENCED MACHINE LEARNING DATA SCIENTIST PASSIONATE ABOUT REAL-WORLD AI SOLUTIONS",
+  subTitle:
+    "EXPERIENCED MACHINE LEARNING DATA SCIENTIST PASSIONATE ABOUT REAL-WORLD AI SOLUTIONS",
   skills: [
     emoji(
       "⚡ Building highly scalable machine learning models for real-world prediction tasks, particularly in healthcare and medical data"
@@ -63,9 +64,8 @@ const skillsSection = {
     ),
     emoji(
       "⚡ Hands-on experience with cloud platforms (AWS, Google Cloud, Azure) for running and analyzing large-scale machine learning workloads"
-    ),
+    )
   ],
-  
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -73,18 +73,18 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "Tensorflow",
-      fontAwesomeClassname: "logos-tensorflow",  // Iconify icon
-      style: { backgroundColor: "transparent" },
+      fontAwesomeClassname: "logos-tensorflow", // Iconify icon
+      style: {backgroundColor: "transparent"}
     },
     {
       skillName: "Airflow",
       fontAwesomeClassname: "logos:airflow-icon",
-      style: { backgroundColor: "transparent" }
+      style: {backgroundColor: "transparent"}
     },
     {
       skillName: "Pytorch",
       fontAwesomeClassname: "devicon:pytorch",
-      style: { backgroundColor: "transparent" }
+      style: {backgroundColor: "transparent"}
     },
     {
       skillName: "MLflow",
@@ -93,56 +93,54 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "FastAPI",
-      fontAwesomeClassname: "logos:fastapi-icon",
+      fontAwesomeClassname: "logos:fastapi-icon"
     },
     {
       skillName: "DataBricks",
       fontAwesomeClassname: "simple-icons:databricks",
-      color: "#d95000",
+      color: "#d95000"
     },
     {
       skillName: "AWS",
-      fontAwesomeClassname: "logos-aws",
+      fontAwesomeClassname: "logos-aws"
     },
     {
       skillName: "Azure",
-      fontAwesomeClassname: "devicon:azure",
+      fontAwesomeClassname: "devicon:azure"
     },
     {
       skillName: "sql-database",
-      fontAwesomeClassname: "vscode-icons:file-type-pgsql",
+      fontAwesomeClassname: "vscode-icons:file-type-pgsql"
     },
     {
       skillName: "Python",
-      fontAwesomeClassname: "logos-python",
+      fontAwesomeClassname: "logos-python"
     },
     {
       skillName: "Langchain",
-      fontAwesomeClassname: "simple-icons:langchain",
+      fontAwesomeClassname: "simple-icons:langchain"
     },
     {
       skillName: "Huggingface",
-      fontAwesomeClassname: "simple-icons:huggingface",
+      fontAwesomeClassname: "simple-icons:huggingface"
     },
     {
       skillName: "Docker",
-      fontAwesomeClassname: "devicon:docker-wordmark",
+      fontAwesomeClassname: "devicon:docker-wordmark"
     },
     {
       skillName: "Kubernetes",
-      fontAwesomeClassname: "logos-kubernetes",
+      fontAwesomeClassname: "logos-kubernetes"
     },
     {
       skillName: "Terrafom",
-      fontAwesomeClassname: "devicon:terraform-wordmark",
+      fontAwesomeClassname: "devicon:terraform-wordmark"
     },
     {
       skillName: "AWS SageMaker",
-      fontAwesomeClassname: "logos-aws-sagemaker",
+      fontAwesomeClassname: "logos-aws-sagemaker"
     },
-    {
-
-    }
+    {}
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -290,7 +288,6 @@ const workExperiences = {
   ]
 };
 
-
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
@@ -308,7 +305,8 @@ const bigProjects = {
     {
       image: require("./assets/images/ragProject.png"), // Add a relevant image
       projectName: "End-to-End RAG Project",
-      projectDesc: "An end-to-end implementation of Retrieval-Augmented Generation (RAG) using Langchain, LangSmith, and Pinecone.",
+      projectDesc:
+        "An end-to-end implementation of Retrieval-Augmented Generation (RAG) using Langchain, LangSmith, and Pinecone.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -319,7 +317,8 @@ const bigProjects = {
     {
       image: require("./assets/images/llamaProject.png"), // Add a relevant image
       projectName: "Fine-Tuning Llama 2.7",
-      projectDesc: "Fine-tuned Llama 2.7 to create a personalized storytelling model using transformers, PEFT, and TRL.",
+      projectDesc:
+        "Fine-tuned Llama 2.7 to create a personalized storytelling model using transformers, PEFT, and TRL.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -330,7 +329,8 @@ const bigProjects = {
     {
       image: require("./assets/images/airflowProject.png"), // Add a relevant image
       projectName: "Stock Prices Using Airflow",
-      projectDesc: "Showcased how to use Airflow for pipeline orchestration in gathering and analyzing stock prices.",
+      projectDesc:
+        "Showcased how to use Airflow for pipeline orchestration in gathering and analyzing stock prices.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -341,7 +341,8 @@ const bigProjects = {
     {
       image: require("./assets/images/afMamlProject.png"), // Add a relevant image
       projectName: "AF MAML",
-      projectDesc: "Developed a meta-learning algorithm for early prediction of Atrial Fibrillation using the MAML approach.",
+      projectDesc:
+        "Developed a meta-learning algorithm for early prediction of Atrial Fibrillation using the MAML approach.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -352,7 +353,8 @@ const bigProjects = {
     {
       image: require("./assets/images/mlflowProject.png"), // Add a relevant image
       projectName: "MLflow Small Project",
-      projectDesc: "A small project showcasing the use of MLflow for managing machine learning experiments.",
+      projectDesc:
+        "A small project showcasing the use of MLflow for managing machine learning experiments.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -363,7 +365,6 @@ const bigProjects = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
-
 
 // Achievement Section
 // Include certificates, talks etc
@@ -406,7 +407,8 @@ const achievementSection = {
     },
     {
       title: "Udacity Nanodegree - Pytorch",
-      subtitle: "Completed the Pytorch Nanodegree focusing on Python, Pytorch, and Dash.",
+      subtitle:
+        "Completed the Pytorch Nanodegree focusing on Python, Pytorch, and Dash.",
       image: require("./assets/images/udacityLogo.png"), // Add a relevant image for Pytorch Nanodegree
       imageAlt: "Udacity Pytorch Nanodegree Logo",
       footerLink: [
@@ -422,12 +424,13 @@ const achievementSection = {
     },
     {
       title: "AWS Machine Learning Foundations Course",
-      subtitle: "Completed the AWS Machine Learning Foundations course on Udacity.",
+      subtitle:
+        "Completed the AWS Machine Learning Foundations course on Udacity.",
       image: require("./assets/images/awsLogo.png"), // Add relevant image for AWS course
       imageAlt: "AWS Machine Learning Foundations Logo",
       footerLink: [
-        { 
-          name: "Certification", 
+        {
+          name: "Certification",
           url: "" // Add the certification link if available
         }
       ]
@@ -435,7 +438,6 @@ const achievementSection = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
-
 
 // Blogs Section
 
