@@ -4,20 +4,20 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-import {SiAws, SiDocker, SiPytorch, SiApacheairflow} from "react-icons/si";
+import { SiAws, SiDocker, SiPytorch, SiApacheairflow } from "react-icons/si";
 
 // Splash Screen
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000, // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true, // Set to false to use static SVG
 };
 
 const greeting = {
@@ -28,7 +28,7 @@ const greeting = {
   ),
   resumeLink:
     "https://drive.google.com/file/d/1bq6ByFxCofbqU36qmgMbjXn067wW7Diy/view?usp=share_link", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
@@ -40,7 +40,7 @@ const socialMediaLinks = {
   medium: "https://medium.com/@mehran1414",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: true, // Set true to display this section, defaults to false
 };
 
 // Skills Section
@@ -64,7 +64,7 @@ const skillsSection = {
     ),
     emoji(
       "⚡ Hands-on experience with cloud platforms (AWS, Google Cloud, Azure) for running and analyzing large-scale machine learning workloads"
-    )
+    ),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -74,75 +74,75 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Tensorflow",
       fontAwesomeClassname: "logos-tensorflow", // Iconify icon
-      style: {backgroundColor: "transparent"}
+      style: { backgroundColor: "transparent" },
     },
     {
       skillName: "Airflow",
       fontAwesomeClassname: "logos:airflow-icon",
-      style: {backgroundColor: "transparent"}
+      style: { backgroundColor: "transparent" },
     },
     {
       skillName: "Pytorch",
       fontAwesomeClassname: "devicon:pytorch",
-      style: {backgroundColor: "transparent"}
+      style: { backgroundColor: "transparent" },
     },
     {
       skillName: "MLflow",
       fontAwesomeClassname: "simple-icons:mlflow",
-      style: {color: "#0056d6"}
+      style: { color: "#0056d6" },
     },
     {
       skillName: "FastAPI",
-      fontAwesomeClassname: "logos:fastapi-icon"
+      fontAwesomeClassname: "logos:fastapi-icon",
     },
     {
       skillName: "DataBricks",
       fontAwesomeClassname: "simple-icons:databricks",
-      color: "#d95000"
+      color: "#d95000",
     },
     {
       skillName: "AWS",
-      fontAwesomeClassname: "logos-aws"
+      fontAwesomeClassname: "logos-aws",
     },
     {
       skillName: "Azure",
-      fontAwesomeClassname: "devicon:azure"
+      fontAwesomeClassname: "devicon:azure",
     },
     {
       skillName: "sql-database",
-      fontAwesomeClassname: "vscode-icons:file-type-pgsql"
+      fontAwesomeClassname: "vscode-icons:file-type-pgsql",
     },
     {
       skillName: "Python",
-      fontAwesomeClassname: "logos-python"
+      fontAwesomeClassname: "logos-python",
     },
     {
       skillName: "Langchain",
-      fontAwesomeClassname: "simple-icons:langchain"
+      fontAwesomeClassname: "simple-icons:langchain",
     },
     {
       skillName: "Huggingface",
-      fontAwesomeClassname: "simple-icons:huggingface"
+      fontAwesomeClassname: "simple-icons:huggingface",
     },
     {
       skillName: "Docker",
-      fontAwesomeClassname: "devicon:docker-wordmark"
+      fontAwesomeClassname: "devicon:docker-wordmark",
     },
     {
       skillName: "Kubernetes",
-      fontAwesomeClassname: "logos-kubernetes"
+      fontAwesomeClassname: "logos-kubernetes",
     },
     {
       skillName: "Terrafom",
-      fontAwesomeClassname: "devicon:terraform-wordmark"
+      fontAwesomeClassname: "devicon:terraform-wordmark",
     },
     {
       skillName: "AWS SageMaker",
-      fontAwesomeClassname: "logos-aws-sagemaker"
+      fontAwesomeClassname: "logos-aws-sagemaker",
     },
-    {}
+    {},
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -159,8 +159,8 @@ const educationInfo = {
       descBullets: [
         "Developed meta-learning models for early prediction of Atrial Fibrillation",
         "Taught Python Summer School and Advanced Research Methods for Statistics",
-        "Collaborated with organizations like Abbott on funded research projects"
-      ]
+        "Collaborated with organizations like Abbott on funded research projects",
+      ],
     },
     {
       schoolName: "Sharif University of Technology",
@@ -170,8 +170,8 @@ const educationInfo = {
       desc: "Focused on statistical modeling, machine learning, and healthcare systems. Developed a classifier for image segmentation as part of the thesis.",
       descBullets: [
         "Thesis: Developed a classifier for image segmentation and classification",
-        "Studied statistical process control charts for monitoring healthcare data"
-      ]
+        "Studied statistical process control charts for monitoring healthcare data",
+      ],
     },
     {
       schoolName: "Golpayegan University of Technology",
@@ -181,10 +181,10 @@ const educationInfo = {
       desc: "Studied industrial engineering with a focus on process optimization and project management.",
       descBullets: [
         "Gained experience in project management and quality control during internships",
-        "Studied process optimization and statistical methods"
-      ]
-    }
-  ]
+        "Studied process optimization and statistical methods",
+      ],
+    },
+  ],
 };
 
 // Your top 3 proficient stacks/tech experience
@@ -194,54 +194,54 @@ const techStack = {
   experience: [
     {
       Stack: "Python", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "90%", //Insert relative proficiency in percentage
     },
     {
       Stack: "Pytorch",
-      progressPercentage: "80%"
+      progressPercentage: "80%",
     },
     {
       Stack: "Git",
-      progressPercentage: "80%"
+      progressPercentage: "80%",
     },
     {
       Stack: "Huggingface",
-      progressPercentage: "80%"
+      progressPercentage: "80%",
     },
     {
       Stack: "Streamlit",
-      progressPercentage: "80%"
+      progressPercentage: "80%",
     },
     {
       Stack: "Langhcian",
-      progressPercentage: "70%"
+      progressPercentage: "70%",
     },
     {
       Stack: "MLflow",
-      progressPercentage: "70%"
+      progressPercentage: "70%",
     },
     {
       Stack: "Docker",
-      progressPercentage: "70%"
+      progressPercentage: "70%",
     },
     {
       Stack: "Apache Airflow",
-      progressPercentage: "70%"
+      progressPercentage: "70%",
     },
     {
       Stack: "Github Actions",
-      progressPercentage: "70%"
+      progressPercentage: "70%",
     },
     {
       Stack: "FastAPI",
-      progressPercentage: "60%"
+      progressPercentage: "60%",
     },
     {
       Stack: "Terraform, GCP, DataBricks",
-      progressPercentage: "40%"
-    }
+      progressPercentage: "40%",
+    },
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -257,8 +257,8 @@ const workExperiences = {
       descBullets: [
         "Developed personalized prediction models for health data",
         "Supervised students in data science projects",
-        "Delivered lectures on advanced statistics and machine learning"
-      ]
+        "Delivered lectures on advanced statistics and machine learning",
+      ],
     },
     {
       role: "Marketing Operations Assistant",
@@ -268,24 +268,24 @@ const workExperiences = {
       desc: "Managed marketing campaigns, customer support, and e-commerce platforms like Shopify, Weebly, and Webflow for IFSGuide.",
       descBullets: [
         "Designed the IFSGuide website using Shopify, Weebly, and Webflow",
-        "Handled marketing operations including campaigns and product orders"
-      ]
+        "Handled marketing operations including campaigns and product orders",
+      ],
     },
     {
       role: "Quality and Inventory Control Assistant",
       company: "Behrizan Design Company",
       companylogo: require("./assets/images/behrizanLogo.png"), // Ensure you have the correct logo image
       date: "Jun 2013 – Dec 2013",
-      desc: "Contributed to the execution of ISO 9001 standards, developed reports, and introduced new principles for auditing raw materials and finished products."
+      desc: "Contributed to the execution of ISO 9001 standards, developed reports, and introduced new principles for auditing raw materials and finished products.",
     },
     {
       role: "Project Management Intern",
       company: "Behrizan Design Company",
       companylogo: require("./assets/images/behrizanLogo.png"), // Ensure you have the correct logo image
       date: "Jun 2012 – Sep 2012",
-      desc: "Established product scheduling for process lines, using MSP and P6 software, and presented results to top-tier managers."
-    }
-  ]
+      desc: "Established product scheduling for process lines, using MSP and P6 software, and presented results to top-tier managers.",
+    },
+  ],
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -293,7 +293,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -310,9 +310,9 @@ const bigProjects = {
       footerLink: [
         {
           name: "View on GitHub",
-          url: "https://github.com/Mehranmzn/end-to-end-rag"
-        }
-      ]
+          url: "https://github.com/Mehranmzn/end-to-end-rag",
+        },
+      ],
     },
     {
       image: require("./assets/images/llamaProject.png"), // Add a relevant image
@@ -322,9 +322,9 @@ const bigProjects = {
       footerLink: [
         {
           name: "View on GitHub",
-          url: "https://github.com/Mehranmzn/fine_tuning_llama_story_teller"
-        }
-      ]
+          url: "https://github.com/Mehranmzn/fine_tuning_llama_story_teller",
+        },
+      ],
     },
     {
       image: require("./assets/images/airflowProject.png"), // Add a relevant image
@@ -334,9 +334,9 @@ const bigProjects = {
       footerLink: [
         {
           name: "View on GitHub",
-          url: "https://github.com/Mehranmzn/Airflow-showcase"
-        }
-      ]
+          url: "https://github.com/Mehranmzn/Airflow-showcase",
+        },
+      ],
     },
     {
       image: require("./assets/images/afMamlProject.png"), // Add a relevant image
@@ -346,9 +346,9 @@ const bigProjects = {
       footerLink: [
         {
           name: "View on GitHub",
-          url: "https://github.com/Mehranmzn/AF_MAML.git"
-        }
-      ]
+          url: "https://github.com/Mehranmzn/AF_MAML.git",
+        },
+      ],
     },
     {
       image: require("./assets/images/mlflowProject.png"), // Add a relevant image
@@ -358,12 +358,12 @@ const bigProjects = {
       footerLink: [
         {
           name: "View on GitHub",
-          url: "https://github.com/Mehranmzn/mlflow01"
-        }
-      ]
-    }
+          url: "https://github.com/Mehranmzn/mlflow01",
+        },
+      ],
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -384,9 +384,9 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "" // Add the certification link if available
-        }
-      ]
+          url: "", // Add the certification link if available
+        },
+      ],
     },
     {
       title: "Udacity Nanodegree - Data Science",
@@ -397,13 +397,13 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Certification",
-          url: "https://www.udacity.com/certificate/G9FWDDXK"
+          url: "https://www.udacity.com/certificate/G9FWDDXK",
         },
         {
           name: "View Project",
-          url: "https://github.com/Mehranmzn/DataScience-Nanodegree"
-        }
-      ]
+          url: "https://github.com/Mehranmzn/DataScience-Nanodegree",
+        },
+      ],
     },
     {
       title: "Udacity Nanodegree - Pytorch",
@@ -414,13 +414,13 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Certification",
-          url: "confirm.udacity.com/5WRAGZR9"
+          url: "confirm.udacity.com/5WRAGZR9",
         },
         {
           name: "View Project",
-          url: "https://github.com/Mehranmzn/Pytorch-nanodegree"
-        }
-      ]
+          url: "https://github.com/Mehranmzn/Pytorch-nanodegree",
+        },
+      ],
     },
     {
       title: "AWS Machine Learning Foundations Course",
@@ -431,12 +431,12 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "" // Add the certification link if available
-        }
-      ]
-    }
+          url: "", // Add the certification link if available
+        },
+      ],
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -451,16 +451,16 @@ const blogSection = {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
       title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?",
     },
     {
       url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
       title: "Why REACT is The Best?",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
+        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies.",
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -476,10 +476,10 @@ const talkSection = {
       title: "Build Actions For Google Assistant",
       subtitle: "Codelab at GDG DevFest Karachi 2019",
       slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+      event_url: "https://www.facebook.com/events/2339906106275053/",
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -490,9 +490,9 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo",
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -501,7 +501,7 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
@@ -509,14 +509,14 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "saadpasta70@gmail.com",
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: true, // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -539,5 +539,5 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
 };
