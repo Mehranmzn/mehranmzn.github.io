@@ -28,6 +28,8 @@ jobs:
 
       - name: Update npm 🚀
         run: npm install -g npm@latest
+      - name: Update Browserslist DB
+        run: npx update-browserslist-db@latest
 
 
       - name: Install and Build 🔧 # Build the Project
@@ -36,7 +38,7 @@ jobs:
           npm install
           npm audit fix || true  # Run non-breaking fixes, but don't fail the workflow if it can't fix everything.
           npm run build
-          
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
