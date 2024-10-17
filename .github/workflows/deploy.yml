@@ -29,6 +29,9 @@ jobs:
       - name: Update npm 🚀
         run: npm install -g npm@latest
 
+      - name: Audit and fix npm vulnerabilities
+        run: npm audit fix  
+
       - name: Install and Build 🔧 # Build the Project
         run: |
           npm install
