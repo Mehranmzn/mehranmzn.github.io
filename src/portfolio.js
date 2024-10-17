@@ -1,543 +1,697 @@
-/* Change this file to get your personal Portfolio */
+/* Change this file to get your personal Porfolio */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
-
-import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-import { SiAws, SiDocker, SiPytorch, SiApacheairflow } from "react-icons/si";
-
-// Splash Screen
-
-const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 2000, // Set animation duration as per your animation
+// Website related settings
+const settings = {
+  isSplash: true, // Change this to false if you don't want Splash screen.
 };
 
-// Summary And Greeting Section
-
-const illustration = {
-  animated: true, // Set to false to use static SVG
+//SEO Related settings
+const seo = {
+  title: "Mehran's Portfolio",
+  description:
+    "A passionate Data Scientist and Machine Learning Engineer dedicated to crafting end-to-end solutions that not only scale but make a real impact. With a love for solving complex problems through data-driven insights and innovative machine learning, I thrive on creating sustainable, meaningful change that connects technology with real-world needs.",
+  og: {
+    title: "Mehran Moazeni Portfolio",
+    type: "website",
+    url: "http://mehranmzn.github.io/",
+  },
 };
 
+//Home Page
 const greeting = {
-  username: "Mehran Moazeni",
-  title: "Hi all, I'm Mehran",
-  subTitle: emoji(
-    "A passionate Data scientist and ML engineer 🚀 having an experience of building real-world ML applications"
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/1bq6ByFxCofbqU36qmgMbjXn067wW7Diy/view?usp=share_link", // Set to empty to hide the button
-  displayGreeting: true, // Set false to hide this section, defaults to true
-};
-
-// Social Media Links
-
-const socialMediaLinks = {
-  github: "https://github.com/Mehranmzn",
-  linkedin: "https://www.linkedin.com/in/mehran-moazeni/",
-  gmail: "moazeni.mehran@gmail.com",
-  medium: "https://medium.com/@mehran1414",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true, // Set true to display this section, defaults to false
-};
-
-// Skills Section
-
-const skillsSection = {
-  title: "What I do",
+  title: "Mehran Moazeni",
+  logo_name: "MehranMoazeni",
   subTitle:
-    "EXPERIENCED MACHINE LEARNING DATA SCIENTIST PASSIONATE ABOUT REAL-WORLD AI SOLUTIONS",
-  skills: [
-    emoji(
-      "⚡ Building highly scalable machine learning models for real-world prediction tasks, particularly in healthcare and medical data"
-    ),
-    emoji(
-      "⚡ Extensive experience in data cleaning, preprocessing, and data modeling using SQL on large-scale medical databases"
-    ),
-    emoji(
-      "⚡ Skilled in using Python for machine learning, including frameworks like TensorFlow, PyTorch, and Scikit-learn"
-    ),
-    emoji(
-      "⚡ Proficient in deploying machine learning models using Docker and managing workflows with MLflow"
-    ),
-    emoji(
-      "⚡ Hands-on experience with cloud platforms (AWS, Google Cloud, Azure) for running and analyzing large-scale machine learning workloads"
-    ),
-  ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
-    {
-      skillName: "Tensorflow",
-      fontAwesomeClassname: "logos-tensorflow", // Iconify icon
-      style: { backgroundColor: "transparent" },
-    },
-    {
-      skillName: "Airflow",
-      fontAwesomeClassname: "logos:airflow-icon",
-      style: { backgroundColor: "transparent" },
-    },
-    {
-      skillName: "Pytorch",
-      fontAwesomeClassname: "devicon:pytorch",
-      style: { backgroundColor: "transparent" },
-    },
-    {
-      skillName: "MLflow",
-      fontAwesomeClassname: "simple-icons:mlflow",
-      style: { color: "#0056d6" },
-    },
-    {
-      skillName: "FastAPI",
-      fontAwesomeClassname: "logos:fastapi-icon",
-    },
-    {
-      skillName: "DataBricks",
-      fontAwesomeClassname: "simple-icons:databricks",
-      color: "#d95000",
-    },
-    {
-      skillName: "AWS",
-      fontAwesomeClassname: "logos-aws",
-    },
-    {
-      skillName: "Azure",
-      fontAwesomeClassname: "devicon:azure",
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "vscode-icons:file-type-pgsql",
-    },
-    {
-      skillName: "Python",
-      fontAwesomeClassname: "logos-python",
-    },
-    {
-      skillName: "Langchain",
-      fontAwesomeClassname: "simple-icons:langchain",
-    },
-    {
-      skillName: "Huggingface",
-      fontAwesomeClassname: "simple-icons:huggingface",
-    },
-    {
-      skillName: "Docker",
-      fontAwesomeClassname: "devicon:docker-wordmark",
-    },
-    {
-      skillName: "Kubernetes",
-      fontAwesomeClassname: "logos-kubernetes",
-    },
-    {
-      skillName: "Terrafom",
-      fontAwesomeClassname: "devicon:terraform-wordmark",
-    },
-    {
-      skillName: "AWS SageMaker",
-      fontAwesomeClassname: "logos-aws-sagemaker",
-    },
-    {},
-  ],
-  display: true, // Set false to hide this section, defaults to true
+    "A passionate Data Scientist and Machine Learning Engineer dedicated to crafting end-to-end solutions that not only scale but make a real impact. With a love for solving complex problems through data-driven insights and innovative machine learning, I thrive on creating sustainable, meaningful change that connects technology with real-world needs.",
+  resumeLink:
+    "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
+  portfolio_repository: "https://github.com/Mehranmzn/mehranmzn.github.io",
+  githubProfile: "https://github.com/Mehranmzn",
 };
 
-// Education Section
+const socialMediaLinks = [
+  /* Your Social Media Link */
+  // gitlab: "https://gitlab.com/ashutoshhathidara98",
+  // facebook: "https://www.facebook.com/laymanbrother.19/",
+  // twitter: "https://twitter.com/ashutosh_1919",
+  // instagram: "https://www.instagram.com/layman_brother/"
 
-const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
+  {
+    name: "Github",
+    link: "https://github.com/Mehranmzn",
+    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
+    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/mehran-moazeni/",
+    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
+    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
+  },
+
+  {
+    name: "Gmail",
+    link: "mailto:moazeni.mehran@gmail.com",
+    fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
+    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
+  },
+];
+
+const skills = {
+  data: [
     {
-      schoolName: "Utrecht University",
-      logo: require("./assets/images/utrechtLogo.png"), // Ensure the correct logo is available
-      subHeader: "PhD in Data Science and Statistics",
-      duration: "December 2020 - February 2025",
-      desc: "Research focus on applied methods for personalized prediction modeling for health data. Involved in teaching courses and conducting research for industry partners.",
-      descBullets: [
-        "Developed meta-learning models for early prediction of Atrial Fibrillation",
-        "Taught Python Summer School and Advanced Research Methods for Statistics",
-        "Collaborated with organizations like Abbott on funded research projects",
+      title: "Data Science & AI",
+      fileName: "DataScienceImg",
+      skills: [
+        "⚡ Building highly scalable machine learning models for real-world prediction tasks",
+        "⚡ Extensive experience in data cleaning, preprocessing, and data modeling using SQL and Pyspark on large-scale medical databases",
+        "⚡ Skilled in using Python for machine learning, including frameworks like TensorFlow, PyTorch, and Scikit-learn",
+        "⚡ Proficient in deploying machine learning models using Docker and managing workflows with MLflow",
+        "⚡ Hands-on experience with cloud platforms (AWS, Azure) for running and analyzing machine learning workloads",
+        "⚡ Expertise in time series analysis and dynamic forecasting using advanced statistical techniques",
       ],
-    },
-    {
-      schoolName: "Sharif University of Technology",
-      logo: require("./assets/images/sharifLogo.png"), // Ensure the correct logo is available
-      subHeader: "Master of Science in Industrial Engineering",
-      duration: "September 2016 - January 2019",
-      desc: "Focused on statistical modeling, machine learning, and healthcare systems. Developed a classifier for image segmentation as part of the thesis.",
-      descBullets: [
-        "Thesis: Developed a classifier for image segmentation and classification",
-        "Studied statistical process control charts for monitoring healthcare data",
-      ],
-    },
-    {
-      schoolName: "Golpayegan University of Technology",
-      logo: require("./assets/images/golpayeganLogo.png"), // Ensure the correct logo is available
-      subHeader: "Bachelor of Science in Industrial Engineering",
-      duration: "September 2011 - September 2015",
-      desc: "Studied industrial engineering with a focus on process optimization and project management.",
-      descBullets: [
-        "Gained experience in project management and quality control during internships",
-        "Studied process optimization and statistical methods",
-      ],
-    },
-  ],
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Python", //Insert stack or technology you have experience in
-      progressPercentage: "90%", //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Pytorch",
-      progressPercentage: "80%",
-    },
-    {
-      Stack: "Git",
-      progressPercentage: "80%",
-    },
-    {
-      Stack: "Huggingface",
-      progressPercentage: "80%",
-    },
-    {
-      Stack: "Streamlit",
-      progressPercentage: "80%",
-    },
-    {
-      Stack: "Langhcian",
-      progressPercentage: "70%",
-    },
-    {
-      Stack: "MLflow",
-      progressPercentage: "70%",
-    },
-    {
-      Stack: "Docker",
-      progressPercentage: "70%",
-    },
-    {
-      Stack: "Apache Airflow",
-      progressPercentage: "70%",
-    },
-    {
-      Stack: "Github Actions",
-      progressPercentage: "70%",
-    },
-    {
-      Stack: "FastAPI",
-      progressPercentage: "60%",
-    },
-    {
-      Stack: "Terraform, GCP, DataBricks",
-      progressPercentage: "40%",
-    },
-  ],
-  displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
-
-// Work experience section
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "PhD Candidate in Data Science & Statistics",
-      company: "Utrecht University",
-      companylogo: require("./assets/images/utrechtLogo.png"), // Ensure you have the correct logo image
-      date: "Dec 2020 – Feb 2025",
-      desc: "Conducting research in applied data science methods for personalized health predictions, funded by organizations like Abbott. Teaching Python Summer School and Advanced Research Methods for Statistics.",
-      descBullets: [
-        "Developed personalized prediction models for health data",
-        "Supervised students in data science projects",
-        "Delivered lectures on advanced statistics and machine learning",
-      ],
-    },
-    {
-      role: "Marketing Operations Assistant",
-      company: "IFSGuide (Remote)",
-      companylogo: require("./assets/images/ifsGuideLogo.png"), // Ensure you have the correct logo image
-      date: "Jun 2020 – Dec 2020",
-      desc: "Managed marketing campaigns, customer support, and e-commerce platforms like Shopify, Weebly, and Webflow for IFSGuide.",
-      descBullets: [
-        "Designed the IFSGuide website using Shopify, Weebly, and Webflow",
-        "Handled marketing operations including campaigns and product orders",
-      ],
-    },
-    {
-      role: "Quality and Inventory Control Assistant",
-      company: "Behrizan Design Company",
-      companylogo: require("./assets/images/behrizanLogo.png"), // Ensure you have the correct logo image
-      date: "Jun 2013 – Dec 2013",
-      desc: "Contributed to the execution of ISO 9001 standards, developed reports, and introduced new principles for auditing raw materials and finished products.",
-    },
-    {
-      role: "Project Management Intern",
-      company: "Behrizan Design Company",
-      companylogo: require("./assets/images/behrizanLogo.png"), // Ensure you have the correct logo image
-      date: "Jun 2012 – Sep 2012",
-      desc: "Established product scheduling for process lines, using MSP and P6 software, and presented results to top-tier managers.",
-    },
-  ],
-};
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true, // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
-const bigProjects = {
-  title: "GitHub Projects",
-  subtitle: "SOME OF THE PROJECTS THAT I HAVE WORKED ON",
-  projects: [
-    {
-      image: require("./assets/images/ragProject.png"), // Add a relevant image
-      projectName: "End-to-End RAG Project",
-      projectDesc:
-        "An end-to-end implementation of Retrieval-Augmented Generation (RAG) using Langchain, LangSmith, and Pinecone.",
-      footerLink: [
+      softwareSkills: [
         {
-          name: "View on GitHub",
-          url: "https://github.com/Mehranmzn/end-to-end-rag",
+          skillName: "Tensorflow",
+          fontAwesomeClassname: "logos-tensorflow",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
+        {
+          skillName: "Keras",
+          fontAwesomeClassname: "simple-icons:keras",
+          style: {
+            backgroundColor: "white",
+            color: "#D00000",
+          },
+        },
+        {
+          skillName: "PyTorch",
+          fontAwesomeClassname: "logos-pytorch",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "ion-logo-python",
+          style: {
+            backgroundColor: "transparent",
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "Deeplearning",
+          imageSrc: "deeplearning_ai_logo.png",
         },
       ],
     },
     {
-      image: require("./assets/images/llamaProject.png"), // Add a relevant image
-      projectName: "Fine-Tuning Llama 2.7",
-      projectDesc:
-        "Fine-tuned Llama 2.7 to create a personalized storytelling model using transformers, PEFT, and TRL.",
-      footerLink: [
+      title: "MLops and ML in Production",
+      fileName: "FullStackImg",
+      skills: [
+        "⚡ Managing machine learning workflows with MLflow for tracking experiments, packaging models, and deploying them in production",
+        "⚡ Building interactive and lightweight machine learning applications using Streamlit for rapid prototyping",
+        "⚡ Developing scalable and high-performance APIs for machine learning models using FastAPI",
+        "⚡ Utilizing Langchain for building language model-powered applications and integrating large language models into projects",
+        "⚡ Processing large-scale datasets and distributed computing using PySpark for efficient data analysis and machine learning tasks",
+      ],
+      softwareSkills: [
         {
-          name: "View on GitHub",
-          url: "https://github.com/Mehranmzn/fine_tuning_llama_story_teller",
+          skillName: "Docker",
+          fontAwesomeClassname: "simple-icons:docker",
+          style: {
+            color: "#E34F26",
+          },
+        },
+        {
+          skillName: "MLflow",
+          fontAwesomeClassname: "simple-icons:mlflow",
+          style: {
+            color: "#1572B6",
+          },
+        },
+        {
+          skillName: "SQL",
+          fontAwesomeClassname: "simple-icons:postgresql",
+          style: {
+            color: "#CC6699",
+          },
+        },
+
+        {
+          skillName: "FastAPI",
+          fontAwesomeClassname: "simple-icons:fastapi",
+          style: {
+            color: "#61DAFB",
+          },
+        },
+        {
+          skillName: "Langchain",
+          fontAwesomeClassname: "simple-icons:langchain",
+          style: {
+            color: "#339933",
+          },
+        },
+        {
+          skillName: "Streamlit",
+          fontAwesomeClassname: "simple-icons:streamlit",
+          style: {
+            color: "#CB3837",
+          },
+        },
+        {
+          skillName: "Github Actions",
+          fontAwesomeClassname: "simple-icons:githubactions",
+          style: {
+            color: "#2C8EBB",
+          },
+        },
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
+          style: {
+            color: "#663399",
+          },
+        },
+        {
+          skillName: "Github",
+          fontAwesomeClassname: "simple-icons:github",
+          style: {
+            color: "#02569B",
+          },
         },
       ],
     },
     {
-      image: require("./assets/images/airflowProject.png"), // Add a relevant image
-      projectName: "Stock Prices Using Airflow",
-      projectDesc:
-        "Showcased how to use Airflow for pipeline orchestration in gathering and analyzing stock prices.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/Mehranmzn/Airflow-showcase",
-        },
+      title: "Cloud Infra-Architecture",
+      fileName: "CloudInfraImg",
+      skills: [
+        "⚡ Experience working on multiple cloud platforms",
+        "⚡ Containerizing applications and machine learning pipelines with Docker to ensure portability and consistency across environments",
+        "⚡ Deploying deep learning models on cloud",
+        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
       ],
-    },
-    {
-      image: require("./assets/images/afMamlProject.png"), // Add a relevant image
-      projectName: "AF MAML",
-      projectDesc:
-        "Developed a meta-learning algorithm for early prediction of Atrial Fibrillation using the MAML approach.",
-      footerLink: [
+      softwareSkills: [
         {
-          name: "View on GitHub",
-          url: "https://github.com/Mehranmzn/AF_MAML.git",
+          skillName: "GCP",
+          fontAwesomeClassname: "simple-icons:googlecloud",
+          style: {
+            color: "#4285F4",
+          },
         },
-      ],
-    },
-    {
-      image: require("./assets/images/mlflowProject.png"), // Add a relevant image
-      projectName: "MLflow Small Project",
-      projectDesc:
-        "A small project showcasing the use of MLflow for managing machine learning experiments.",
-      footerLink: [
         {
-          name: "View on GitHub",
-          url: "https://github.com/Mehranmzn/mlflow01",
+          skillName: "AWS",
+          fontAwesomeClassname: "simple-icons:amazonaws",
+          style: {
+            color: "#FF9900",
+          },
+        },
+        {
+          skillName: "Azure",
+          fontAwesomeClassname: "simple-icons:microsoftazure",
+          style: {
+            color: "#0089D6",
+          },
+        },
+        {
+          skillName: "Terrafom",
+          fontAwesomeClassname: "simple-icons:terraform",
+          style: {
+            color: "#326CE5",
+          },
+        },
+        {
+          skillName: "PostgreSQL",
+          fontAwesomeClassname: "simple-icons:postgresql",
+          style: {
+            color: "#336791",
+          },
+        },
+
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "simple-icons:docker",
+          style: {
+            color: "#1488C6",
+          },
+        },
+        {
+          skillName: "Kubernetes",
+          fontAwesomeClassname: "simple-icons:kubernetes",
+          style: {
+            color: "#326CE5",
+          },
         },
       ],
     },
   ],
-  display: true, // Set false to hide this section, defaults to true
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
-const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters, and Some Cool Stuff that I have done!",
-
-  achievementsCards: [
+// Education Page
+const competitiveSites = {
+  competitiveSites: [
     {
-      title: "Oxford Machine Learning Summer School",
-      subtitle:
-        "Attended the prestigious summer school covering topics such as statistical machine learning, representation learning, graph neural networks, and more.",
-      image: require("./assets/images/oxfordLogo.png"), // Add the relevant image for Oxford
-      imageAlt: "Oxford Machine Learning Summer School Logo",
-      footerLink: [
+      siteName: "LeetCode",
+      iconifyClassname: "simple-icons:leetcode",
+      style: {
+        color: "#F79F1B",
+      },
+      profileLink: "https://leetcode.com/layman_brother/",
+    },
+    {
+      siteName: "HackerRank",
+      iconifyClassname: "simple-icons:hackerrank",
+      style: {
+        color: "#2EC866",
+      },
+      profileLink: "https://www.hackerrank.com/layman_brother",
+    },
+    {
+      siteName: "Codechef",
+      iconifyClassname: "simple-icons:codechef",
+      style: {
+        color: "#5B4638",
+      },
+      profileLink: "https://www.codechef.com/users/ashutosh_1919",
+    },
+    {
+      siteName: "Codeforces",
+      iconifyClassname: "simple-icons:codeforces",
+      style: {
+        color: "#1F8ACB",
+      },
+      profileLink: "http://codeforces.com/profile/layman_brother",
+    },
+    {
+      siteName: "Hackerearth",
+      iconifyClassname: "simple-icons:hackerearth",
+      style: {
+        color: "#323754",
+      },
+      profileLink: "https://www.hackerearth.com/@ashutosh391",
+    },
+    {
+      siteName: "Kaggle",
+      iconifyClassname: "simple-icons:kaggle",
+      style: {
+        color: "#20BEFF",
+      },
+      profileLink: "https://www.kaggle.com/laymanbrother",
+    },
+  ],
+};
+
+const degrees = {
+  degrees: [
+    {
+      title: "Indian Institute of Information Technology Kurnool",
+      subtitle: "B.Tech. in Computer Engineering",
+      logo_path: "iiitk_logo.png",
+      alt_name: "IIITDM Kurnool",
+      duration: "2016 - 2020",
+      descriptions: [
+        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
+        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
+        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+      ],
+      website_link: "http://iiitk.ac.in",
+    },
+    {
+      title: "Indiana University Bloomington",
+      subtitle: "M.S. in Computer Science",
+      logo_path: "iu_logo.png",
+      alt_name: "Indiana University Bloomington",
+      duration: "2021 - 2023",
+      descriptions: [
+        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
+        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
+        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
+      ],
+      website_link: "https://www.indiana.edu/",
+    },
+  ],
+};
+
+const certifications = {
+  certifications: [
+    {
+      title: "Machine Learning",
+      subtitle: "- Andrew Ng",
+      logo_path: "stanford_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/22MTSSC5WDTM",
+      alt_name: "Stanford University",
+      color_code: "#8C151599",
+    },
+    {
+      title: "Deep Learning",
+      subtitle: "- Andrew Ng",
+      logo_path: "deeplearning_ai_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
+      alt_name: "deeplearning.ai",
+      color_code: "#00000099",
+    },
+    {
+      title: "ML on GCP",
+      subtitle: "- GCP Training",
+      logo_path: "google_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
+      alt_name: "Google",
+      color_code: "#0C9D5899",
+    },
+    {
+      title: "Data Science",
+      subtitle: "- Alex Aklson",
+      logo_path: "ibm_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/specialization/PLEAPCSJBZT5",
+      alt_name: "IBM",
+      color_code: "#1F70C199",
+    },
+    {
+      title: "Big Data",
+      subtitle: "- Kim Akers",
+      logo_path: "microsoft_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/164zKCFOsI4vGqokc-Qj-e_D00kLDHIrG/view",
+      alt_name: "Microsoft",
+      color_code: "#D83B0199",
+    },
+    {
+      title: "Advanced Data Science",
+      subtitle: "- Romeo Kienzler",
+      logo_path: "ibm_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/BH2T9BRU87BH",
+      alt_name: "IBM",
+      color_code: "#1F70C199",
+    },
+    {
+      title: "Advanced ML on GCP",
+      subtitle: "- GCP Training",
+      logo_path: "google_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/5JZZM7TNQ2AV",
+      alt_name: "Google",
+      color_code: "#0C9D5899",
+    },
+    {
+      title: "DL on Tensorflow",
+      subtitle: "- Laurence Moroney",
+      logo_path: "deeplearning_ai_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/6T4DCUGNK8J8",
+      alt_name: "deeplearning.ai",
+      color_code: "#00000099",
+    },
+    {
+      title: "Fullstack Development",
+      subtitle: "- Jogesh Muppala",
+      logo_path: "coursera_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
+      alt_name: "Coursera",
+      color_code: "#2A73CC",
+    },
+    {
+      title: "Kuberenetes on GCP",
+      subtitle: "- Qwiklabs",
+      logo_path: "gcp_logo.png",
+      certificate_link:
+        "https://google.qwiklabs.com/public_profiles/e4d5a92b-faf6-4679-a70b-a9047c0cd750",
+      alt_name: "GCP",
+      color_code: "#4285F499",
+    },
+    {
+      title: "Cryptography",
+      subtitle: "- Saurabh Mukhopadhyay",
+      logo_path: "nptel_logo.png",
+      certificate_link:
+        "https://drive.google.com/open?id=1z5ExD_QJVdU0slLkp8CBqSF3-C3g-ro_",
+      alt_name: "NPTEL",
+      color_code: "#FFBB0099",
+    },
+    {
+      title: "Cloud Architecture",
+      subtitle: "- Qwiklabs",
+      logo_path: "gcp_logo.png",
+      certificate_link:
+        "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
+      alt_name: "GCP",
+      color_code: "#4285F499",
+    },
+  ],
+};
+
+// Experience Page
+const experience = {
+  title: "Experience",
+  subtitle: "Work, Internship and Volunteership",
+  description:
+    "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+  header_image_path: "experience.svg",
+  sections: [
+    {
+      title: "Work",
+      work: true,
+      experiences: [
         {
-          name: "Certification",
-          url: "", // Add the certification link if available
+          title: "Machine Learning Engineer",
+          company: "TikTok Inc.",
+          company_url: "https://www.tiktok.com/en/",
+          logo_path: "tiktok_logo.png",
+          duration: "June 2023 - Present",
+          location: "San Jose, CA, USA",
+          description:
+            "Improving ads ranking models on the core TikTok product. Experience working on modeling two-tower architectures like DeepFM, Wide & deep learning, etc. Working on Large Language Models (LLM) pretraining and Large Multi-modal Model (LMM) finetuning strategies.",
+          color: "#000000",
+        },
+        {
+          title: "Associate AI Engineer",
+          company: "Legato Health Technology",
+          company_url: "https://legatohealthtech.com/",
+          logo_path: "legato_logo.png",
+          duration: "June 2020 - Aug 2021",
+          location: "Hyderabad, Telangana",
+          description:
+            "I am working on automating healthcare products. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working on Cancer Survival and Reoccurence Prediction. Our goal is to make AI system which scales and removes doctor dependency as much as possible.",
+          color: "#0879bf",
+        },
+        {
+          title: "Android and ML Developer",
+          company: "Muffito Incorporation",
+          company_url: "https://www.linkedin.com/company/muffito-inc/about/",
+          logo_path: "muffito_logo.png",
+          duration: "May 2018 - Oct 2018",
+          location: "Pune, Maharashtra",
+          description:
+            "I have created complete Android Application for locating Pub, Bar and beverage shops around you. I have also worked on implementation of algorithms for Face Detection, Text extraction from Image. I was involved in a team for creating complete software architecure of mobile and web application as well as admin panel for company.",
+          color: "#9b1578",
+        },
+        {
+          title: "Android Developer",
+          company: "FreeCopy Pvt. Ltd.",
+          company_url: "https://www.linkedin.com/company/freecopy/about/",
+          logo_path: "freecopy_logo.png",
+          duration: "Nov 2017 - Dec 2017",
+          location: "Ahmedabad, Gujarat",
+          description:
+            "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
+          color: "#fc1f20",
         },
       ],
     },
     {
-      title: "Udacity Nanodegree - Data Science",
-      subtitle:
-        "Completed the Data Science Nanodegree, covering topics such as Python, PySpark, A/B testing, and SQL.",
-      image: require("./assets/images/udacityLogo.png"), // Add the Udacity logo image
-      imageAlt: "Udacity Data Science Logo",
-      footerLink: [
+      title: "Internships",
+      experiences: [
         {
-          name: "View Certification",
-          url: "https://www.udacity.com/certificate/G9FWDDXK",
+          title: "Machine Learning Intern",
+          company: "TikTok Inc.",
+          company_url: "https://www.tiktok.com/en/",
+          logo_path: "tiktok_logo.png",
+          duration: "May 2022 - Aug 2022",
+          location: "San Francisco, USA",
+          description:
+            "Building new features on the backend recommendation system, specifically ranking algorithms for Ads that touch hundreds of millions of people around the world. Improving online and offline content ranking algorithms by performing hard sample data replays for training steps.",
+          color: "#000000",
         },
         {
-          name: "View Project",
-          url: "https://github.com/Mehranmzn/DataScience-Nanodegree",
-        },
-      ],
-    },
-    {
-      title: "Udacity Nanodegree - Pytorch",
-      subtitle:
-        "Completed the Pytorch Nanodegree focusing on Python, Pytorch, and Dash.",
-      image: require("./assets/images/udacityLogo.png"), // Add a relevant image for Pytorch Nanodegree
-      imageAlt: "Udacity Pytorch Nanodegree Logo",
-      footerLink: [
-        {
-          name: "View Certification",
-          url: "confirm.udacity.com/5WRAGZR9",
+          title: "Data Science Research Intern",
+          company: "Delhivery Pvt. Ltd.",
+          company_url: "https://www.delhivery.com/",
+          logo_path: "delhivery_logo.png",
+          duration: "May 2019 - Sept 2019",
+          location: "Gurgaon, Haryana",
+          description:
+            "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
+          color: "#ee3c26",
         },
         {
-          name: "View Project",
-          url: "https://github.com/Mehranmzn/Pytorch-nanodegree",
-        },
-      ],
-    },
-    {
-      title: "AWS Machine Learning Foundations Course",
-      subtitle:
-        "Completed the AWS Machine Learning Foundations course on Udacity.",
-      image: require("./assets/images/awsLogo.png"), // Add relevant image for AWS course
-      imageAlt: "AWS Machine Learning Foundations Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "", // Add the certification link if available
+          title: "Data Science Intern",
+          company: "Intel Indexer LLC",
+          company_url:
+            "https://opencorporates.com/companies/us_dc/EXTUID_4170286",
+          logo_path: "intel_logo.jpg",
+          duration: "Nov 2018 - Dec 2018",
+          location: "Work From Home",
+          description:
+            "This is financial Solution Company. I have made Supervised Learning model for the company which can perform time series analysis on Stock price data for 32 companies. I have built LSTM Neural Networks Model and trained the data of 32 companies for last 2 years. This model is also used for forecasting.",
+          color: "#0071C5",
         },
       ],
     },
+    {
+      title: "Volunteerships",
+      experiences: [
+        {
+          title: "Google Explore ML Facilitator",
+          company: "Google",
+          company_url: "https://about.google/",
+          logo_path: "google_logo.png",
+          duration: "June 2019 - April 2020",
+          location: "Hyderabad, Telangana",
+          description:
+            "Explore Machine Learning (ML) is a Google-sponsored program for university students to get started with Machine Learning. The curriculum offers 3 tracks of ML Content (Beginner, Intermediate, Advanced) and relies on university student facilitators to train other students on campus and to build opensource projects under this program.",
+          color: "#4285F4",
+        },
+        {
+          title: "Microsoft Student Partner",
+          company: "Microsoft",
+          company_url: "https://www.microsoft.com/",
+          logo_path: "microsoft_logo.png",
+          duration: "Aug 2019 - May 2020",
+          location: "Hyderabad, Telangana",
+          description:
+            "Microsoft Student Partner is a program for university students to lead the awareness and use of Cloud especially Azure tools in the development of their projects and startups. Under this program, I have organised hands on workshops and seminars to teach Cloud Computing concepts to students.",
+          color: "#D83B01",
+        },
+        {
+          title: "Mozilla Campus Captain",
+          company: "Mozilla",
+          company_url: "https://www.mozilla.org/",
+          logo_path: "mozilla_logo.png",
+          duration: "Oct 2019 - May 2020",
+          location: "Kurnool, Andhra Pradesh",
+          description:
+            "My responsibility for this program was to create opensource environment in college and in the city. We have organised multiple hackathons on the problems collected by ordinary people from Kurnool city. We have build opensource community of our own college. The community is available at dsc_iiitdmk on github.",
+          color: "#000000",
+        },
+        {
+          title: "Developer Students Club Member",
+          company: "DSC IIITDM Kurnool",
+          company_url:
+            "https://www.linkedin.com/company/developer-students-club-iiitdm-kurnool",
+          logo_path: "dsc_logo.png",
+          duration: "Jan 2018 - May 2020",
+          location: "Kurnool, Andhra Pradesh",
+          description:
+            "We have well established developer club in college which is directly associated with Google Developers. We have developed many interdisciplinary projects under the membership of this club. We have organised workshops and activities on Android Application Development, Flutter and React JS.",
+          color: "#0C9D58",
+        },
+        {
+          title: "Developer Program Member",
+          company: "Github",
+          company_url: "https://github.com/",
+          logo_path: "github_logo.png",
+          duration: "July 2019 - PRESENT",
+          location: "Work From Home",
+          description:
+            "I am actively contributing to many opensource projects. I have contributed to projects of organisations like Tensorflow, Uber, Facebook, Google, Scikit-learn, Kiwix, Sympy, Python, NVLabs, Fossasia, Netrack, Keras etc. These contributions include bug fixes, feature requests and formulating proper documentation for project.",
+          color: "#181717",
+        },
+      ],
+    },
   ],
-  display: true, // Set false to hide this section, defaults to true
 };
 
-// Blogs Section
+// Projects Page
+const projectsHeader = {
+  title: "Projects",
+  description:
+    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+  avatar_image_path: "projects_image.svg",
+};
 
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
+const publicationsHeader = {
+  title: "Publications",
+  description: "Some of my published Articles, Blogs and Research.",
+  avatar_image_path: "projects_image.svg",
+};
+
+const publications = {
+  data: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?",
+      id: "neuro-symbolic-sudoku-solver",
+      name: "Neuro-Symbolic Sudoku Solver",
+      createdAt: "2023-07-02T00:00:00Z",
+      description: "Paper published in KDD KiML 2023",
+      url: "https://arxiv.org/abs/2307.00653",
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies.",
+      id: "mdp-diffusion",
+      name: "MDP-Diffusion",
+      createdAt: "2023-09-19T00:00:00Z",
+      description: "Blog published in Paperspace",
+      url: "https://blog.paperspace.com/mdp-diffusion/",
     },
-  ],
-  display: true, // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
+      id: "consistency-models",
+      name: "Consistency Models",
+      createdAt: "2023-10-12T00:00:00Z",
+      description: "Blog published in Paperspace",
+      url: "https://blog.paperspace.com/consistency-models/",
     },
   ],
-  display: false, // Set false to hide this section, defaults to true
 };
 
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo",
-  ],
-  display: false, // Set false to hide this section, defaults to true
+// Contact Page
+const contactPageData = {
+  contactSection: {
+    title: "Contact Me",
+    profile_image_path: "animated_ashutosh.png",
+    description:
+      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+  },
+  blogSection: {
+    title: "Blogs",
+    subtitle:
+      "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
+    link: "https://blogs.ashutoshhathidara.com/",
+    avatar_image_path: "blogs_image.svg",
+  },
+  addressSection: {
+    title: "Address",
+    subtitle: "Saratoga Ave, San Jose, CA, USA 95129",
+    locality: "San Jose",
+    country: "USA",
+    region: "California",
+    postalCode: "95129",
+    streetAddress: "Saratoga Avenue",
+    avatar_image_path: "address_image.svg",
+    location_map_link: "https://maps.app.goo.gl/NvYZqa34Wye4tpS17",
+  },
+  phoneSection: {
+    title: "",
+    subtitle: "",
+  },
 };
-
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true, // Set false to hide this section, defaults to true
-};
-
-const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com",
-};
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true, // Set true to display this section, defaults to false
-};
-
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
-  illustration,
+  settings,
+  seo,
   greeting,
   socialMediaLinks,
-  splashScreen,
-  skillsSection,
-  educationInfo,
-  techStack,
-  workExperiences,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo,
-  twitterDetails,
-  isHireable,
-  resumeSection,
+  skills,
+  competitiveSites,
+  degrees,
+  certifications,
+  experience,
+  projectsHeader,
+  publicationsHeader,
+  publications,
+  contactPageData,
 };
