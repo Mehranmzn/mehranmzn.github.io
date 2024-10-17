@@ -30,7 +30,7 @@ jobs:
         run: npm install -g npm@latest
 
       - name: Audit and fix npm vulnerabilities
-        run: npm audit fix  
+        run: npm audit fix --force 
 
       - name: Install and Build 🔧 # Build the Project
         run: |
