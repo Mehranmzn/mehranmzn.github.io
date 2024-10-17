@@ -7,3 +7,4 @@ node_modules
 public/.DS_Store
 build/.DS_Store
 .env
+**/.DS_Store
