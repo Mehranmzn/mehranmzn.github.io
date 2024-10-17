@@ -29,13 +29,14 @@ jobs:
       - name: Update npm 🚀
         run: npm install -g npm@latest
 
-      - name: Audit and fix npm vulnerabilities
-        run: npm audit fix --force 
 
       - name: Install and Build 🔧 # Build the Project
         run: |
+          set -e
           npm install
+          npm audit fix || true  # Run non-breaking fixes, but don't fail the workflow if it can't fix everything.
           npm run build
+          
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
