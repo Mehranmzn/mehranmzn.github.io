@@ -249,42 +249,42 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "PhD Candidate in Data Science & Statistics",
-      company: "Utrecht University",
+      role: "Data Science/ ML Engineer",
+      company: "University Medical Center Utrecht (UMCU)",
       companylogo: require("./assets/images/utrechtLogo.png"), // Ensure you have the correct logo image
-      date: "Dec 2020 – Feb 2025",
-      desc: "Conducting research in applied data science methods for personalized health predictions, funded by organizations like Abbott. Teaching Python Summer School and Advanced Research Methods for Statistics.",
+      date: "Dec 2020 – Jan 2025",
+      desc: "R, Python",
       descBullets: [
-        "Developed personalized prediction models for health data",
-        "Supervised students in data science projects",
-        "Delivered lectures on advanced statistics and machine learning",
+        "Implemented advanced machine learning techniques using PyTorch to enhance prediction models in UMCU hospital setting, resulting in a 26% improvement in accuracy and efficiency",
+        "Utilized PySpark, SQL, and Pollars to optimize queries from a massive medical database, resulting in a 55% reduction in query time and a 40% increase in overall data processing efficiency",
+        "Collaborated with cross-functional teams to develop model monitoring, model tuning in the deployment (MLops), increasing overall efficiency by 25% using R",
+        "Utilized Pytorch to develop and deploy LSTM, GRU, attention models, and scikit-learn models for personalized time- series forecasting, resulting in a 22% improvement in real-time disease prediction accuracy",
+        "Deployed SQL, pyspark, and duckdb in conjunction with cloud-based infrastructure to streamline data processing and improve read/IO speeds, resulting in a 50% decrease in processing time and a 25% increase in overall efficiency. Implemented personalized prediction algorithms through RStudio, which resulted in a 25% increase in customer satisfaction and a 10% boost in sales conversion rates",
+        "Implemented automated ETL processes using Git and CI/CD best practices to increase data processing efficiency by 40%, resulting in a 20% decrease in overall project timelines"
+        
       ],
     },
     {
-      role: "Marketing Operations Assistant",
+      role: "Data Analyst,",
       company: "IFSGuide (Remote)",
       companylogo: require("./assets/images/ifsGuideLogo.png"), // Ensure you have the correct logo image
       date: "Jun 2020 – Dec 2020",
-      desc: "Managed marketing campaigns, customer support, and e-commerce platforms like Shopify, Weebly, and Webflow for IFSGuide.",
+      desc: "Data Analyst, R, Python",
       descBullets: [
-        "Designed the IFSGuide website using Shopify, Weebly, and Webflow",
-        "Handled marketing operations including campaigns and product orders",
+        "Utilized advanced statistical models such xGBoost to predict future customer trends and behavior, leading to a 23% improvement in forecasting accuracy and reducing excess inventory by 47%",
+ "Analyzed customer behavior data to predict churn rates for the webshop, resulting in a 15% decrease in customer attrition and a 10% increase in customer retention"
       ],
     },
     {
-      role: "Quality and Inventory Control Assistant",
+      role: "Behrizan Design Company",
       company: "Behrizan Design Company",
       companylogo: require("./assets/images/behrizanLogo.png"), // Ensure you have the correct logo image
       date: "Jun 2013 – Dec 2013",
-      desc: "Contributed to the execution of ISO 9001 standards, developed reports, and introduced new principles for auditing raw materials and finished products.",
-    },
-    {
-      role: "Project Management Intern",
-      company: "Behrizan Design Company",
-      companylogo: require("./assets/images/behrizanLogo.png"), // Ensure you have the correct logo image
-      date: "Jun 2012 – Sep 2012",
-      desc: "Established product scheduling for process lines, using MSP and P6 software, and presented results to top-tier managers.",
-    },
+      desc: "Data Scientist/ Data Analyst, Matlab, R",
+      descBullets: [
+        "Developed a predictive modeling algorithm to forecast demand for new product launches, improving accuracy by 11% and reducing forecasting errors by 15%",
+"Improved failure prediction accuracy in process line by 20% through the development and implementation of advanced machine learning algorithms"
+    }
   ],
 };
 
@@ -375,6 +375,34 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters, and Some Cool Stuff that I have done!",
 
   achievementsCards: [
+    {
+      title: "AWS ML associate degree",
+      subtitle:
+        "SageMaker, AWS, Machine Learning, Bedrock, and more.",
+      image: require("./assets/images/oxfordLogo.png"), // Add the relevant image for Oxford
+      imageAlt: "",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://www.credly.com/badges/7afc22de-4a20-4bd7-8bb4-25b6dcba5c75/linked_in?t=sn73ei", // Add the certification link if available
+        },
+      ],
+    },
+
+    {
+      title: "AZure AZ-900",
+      subtitle:
+        "Azure fundamentals",
+      image: require("./assets/images/oxfordLogo.png"), // Add the relevant image for Oxford
+      imageAlt: "",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "", // Add the certification link if available
+        },
+      ],
+    },
+
     {
       title: "Oxford Machine Learning Summer School",
       subtitle:
